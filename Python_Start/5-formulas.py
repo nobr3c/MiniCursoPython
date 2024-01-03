@@ -21,4 +21,4 @@ for i in range(min_column+1, max_column+1): #inicia a partir da coluna 2 e da li
     # print(letter)
     sheet[f"{letter}{max_row+1}"] = f"=SUM({letter}{min_row+1}:{letter}{max_row})"
     sheet[f"{letter}{max_row+1}"].style = "Currency"
-    wb.save("data/testAut.xlsx")
+    wb.save("testAut.xlsx")
